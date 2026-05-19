@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Auditor"
+  short_description: "Audit codebases for risk and complexity"
+  default_prompt: "Use $codebase-auditor to audit this repository and generate a full engineering report."

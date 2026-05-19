@@ -1,0 +1,17 @@
+services:
+  web:
+    build: ./services/web
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+  api:
+    build: ./services/api
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+  db:
+    image: postgres:16
+    ports:
+      - "5432:5432"

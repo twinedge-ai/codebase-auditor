@@ -1,0 +1,5 @@
+[project]
+name = "codex-codebase-auditor-python"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "Python scanner runtime for the codex-codebase-auditor Node package."

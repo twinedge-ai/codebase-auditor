@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "vulns": [
+        {
+          "id": "GHSA-vh95-rmgr-6w4m",
+          "summary": "Prototype pollution in minimist",
+          "aliases": ["CVE-2020-7598"],
+          "database_specific": {
+            "severity": "HIGH"
+          }
+        }
+      ]
+    }
+  ]
+}

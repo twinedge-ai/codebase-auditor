@@ -1,0 +1,79 @@
+{
+  "profile": "quick-static",
+  "exclude": [
+    ".git",
+    ".hg",
+    ".svn",
+    "node_modules",
+    "dist",
+    "build",
+    ".next",
+    ".nuxt",
+    "coverage",
+    "vendor",
+    ".venv",
+    "target",
+    "test/fixtures",
+    "tests/fixtures",
+    "__fixtures__",
+    "__pycache__",
+    ".tox",
+    ".pytest_cache",
+    ".mypy_cache",
+    ".ruff_cache",
+    ".cache",
+    ".idea",
+    ".vscode"
+  ],
+  "severityThreshold": "medium",
+  "allowNetwork": false,
+  "allowPerfTests": false,
+  "allowMocks": false,
+  "allowPrivateNetwork": false,
+  "maxFindings": 50,
+  "testCommands": [],
+  "externalTools": {},
+  "frontend": {
+    "url": null,
+    "runLighthouse": false,
+    "probeRequests": 3
+  },
+  "security": {
+    "scanSecrets": true,
+    "dependencyAudit": true,
+    "staticSecurity": true,
+    "runNpmAudit": false,
+    "runPipAudit": false,
+    "runCargoAudit": false,
+    "runTrivy": false,
+    "runGitleaks": false,
+    "runSemgrep": false
+  },
+  "performance": {
+    "runLoadTests": false,
+    "maxDurationSeconds": 60,
+    "targets": [],
+    "requests": 20,
+    "concurrency": 4,
+    "timeoutSeconds": 5,
+    "runBenchmarks": false,
+    "confirmBenchmarks": false,
+    "runAutocannon": false,
+    "runK6": false,
+    "k6Script": null,
+    "lighthouseNoSandbox": false
+  },
+  "architecture": {
+    "mapImports": true,
+    "mapServices": true,
+    "detectCycles": true,
+    "detectGodModules": true,
+    "maxGraphNodes": 80,
+    "maxGraphEdges": 160
+  },
+  "report": {
+    "formats": ["markdown", "json"],
+    "includeMermaidDiagrams": false,
+    "includeRemediationPlan": true
+  }
+}

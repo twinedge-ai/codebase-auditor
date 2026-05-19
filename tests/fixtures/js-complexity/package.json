@@ -1,0 +1,12 @@
+{
+  "name": "js-complexity-fixture",
+  "private": true,
+  "scripts": {
+    "test": "node src/example.js",
+    "build": "echo build"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "react": "^18.2.0"
+  }
+}

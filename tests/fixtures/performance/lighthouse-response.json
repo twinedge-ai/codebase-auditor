@@ -1,0 +1,24 @@
+{
+  "categories": {
+    "performance": {
+      "score": 0.72
+    }
+  },
+  "audits": {
+    "first-contentful-paint": {
+      "numericValue": 820.5
+    },
+    "largest-contentful-paint": {
+      "numericValue": 1420.25
+    },
+    "total-blocking-time": {
+      "numericValue": 35
+    },
+    "speed-index": {
+      "numericValue": 1100
+    },
+    "cumulative-layout-shift": {
+      "numericValue": 0.02
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "security-deps-fixture",
+  "private": true,
+  "dependencies": {
+    "minimist": "0.0.8"
+  }
+}

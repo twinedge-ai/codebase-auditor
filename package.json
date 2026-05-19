@@ -1,0 +1,47 @@
+{
+  "name": "codex-codebase-auditor",
+  "version": "1.0.0",
+  "description": "Codex skill and CLI for codebase complexity, architecture, dependency, security, and performance audits.",
+  "license": "MIT",
+  "type": "commonjs",
+  "homepage": "https://github.com/twinedge-ai/codebase-auditor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twinedge-ai/codebase-auditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twinedge-ai/codebase-auditor/issues"
+  },
+  "keywords": [
+    "codex",
+    "skill",
+    "audit",
+    "security",
+    "performance",
+    "architecture",
+    "complexity"
+  ],
+  "bin": {
+    "codex-codebase-auditor": "bin/codex-codebase-auditor.js"
+  },
+  "files": [
+    "bin",
+    "skill",
+    "examples",
+    "pyproject.toml",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "!skill/**/__pycache__",
+    "!skill/**/*.pyc"
+  ],
+  "scripts": {
+    "install-skill": "node bin/codex-codebase-auditor.js install",
+    "pack:check": "npm pack --dry-run",
+    "prepublishOnly": "npm test && npm run pack:check",
+    "test": "node tests/run_all.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
